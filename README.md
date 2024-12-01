@@ -15,5 +15,5 @@
   - Distribution of CVEs and fixed CVEs yearly: morefixes_yearlycve.py
   - Distribution of CWE types : morefixes_cwe_distribution.py
   - Top repositories with most CVEs: morefixes_top_repositories.py
-  - Distribution of fixes in different programming lan- guages:morefixes_language.py
+  - Distribution of fixes in different programming languages:morefixes_language.py
 - Results Path: ./results_repo
