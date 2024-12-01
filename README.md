@@ -32,14 +32,14 @@
         - False by default
       - **UPDATEDATABASE_FLAG**: Enable this when you want to update the database with the predicted CWE(s)
         - True by default
-    - Setup:
-      - Setup and run MoreFixes
-      - When finished, deactivate venv
-      - Create a new venv (with a different name from the MoreFixes venv!), such as venvCWEPredictor
-      - Activate venvCWEPredictor
-      - Install necessary packages using **pip install -r requirementsCWEPredictor.txt**
-      - Configure the flags to your preference in the **cwe_predictor.py** script
-      - Run the CWE Prediction system using **python3 Code/cwe_predictor.py**
+  - **Setup**:
+    - Setup and run MoreFixes
+    - When finished, deactivate venv
+    - Create a new venv (with a different name from the MoreFixes venv!), such as venvCWEPredictor
+    - Activate venvCWEPredictor
+    - Install necessary packages using **pip install -r requirementsCWEPredictor.txt**
+    - Configure the flags to your preference in the **cwe_predictor.py** script
+    - Run the CWE Prediction system using **python3 Code/cwe_predictor.py**
 - **Required packages**
   - **requirements.txt** has been slightly adapted to ensure the requirements for MoreFixes are installed
   - **requirementsCWEPredictor.txt** is added to ensure all requirements for the CWE Prediction System are installed
