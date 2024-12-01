@@ -26,7 +26,7 @@ HYPERPARAMATERTUNING_FLAG = False
 
 # Enable this when you want to update the database with the predicted CWE(s)
 # TRUE BY DEFAULT
-UPDATEDATABASE_FLAG = False
+UPDATEDATABASE_FLAG = True
 
 def create_connection(db_name, db_user, db_password, db_host, db_port):
     # Create a connection to the Postgre database using the provided information
