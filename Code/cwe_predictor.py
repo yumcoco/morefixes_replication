@@ -28,7 +28,7 @@ HYPERPARAMATERTUNING_FLAG = False
 
 # Enable this when you want to update the database with the predicted CWE(s)
 # TRUE BY DEFAULT
-UPDATEDATABASE_FLAG = False
+UPDATEDATABASE_FLAG = True
 
 def create_connection(db_name, db_user, db_password, db_host, db_port):
     # Create a connection to the Postgre database using the provided information
@@ -62,7 +62,6 @@ def data_processing(engine):
     dfX['description'] = dfX['description'].apply(lambda x: x[0]['value'] if isinstance(x, list) and len(x) > 0 and 'value' in x[0] else None)
     dfX = dfX.drop(dfX.columns[0], axis=1)  # Drop the third column (a double CVE column)
     df_combined = pd.concat([dfX, dfY], axis=1) # Concatenate the two separate data frames
-    print(df_combined)
     
     # We now have one data frame with the CVEs, corresponding CWE(s) and description of the CVEs
     # Divide this into two separate data frame: one with known CWE(s) and one with unknown CWE(s)
@@ -153,7 +152,7 @@ def update_cwe_labels(engine, df_updated):
     print("Database update complete!")
 
 def predict():
-    print("|| START PREDICTION PIPELINE ||")
+    print("|| START CWE PREDICTION PIPELINE ||")
 
     # Initialize the Postgre database information (user, name, password, host, port)
     db_name = "postgrescvedumper"
