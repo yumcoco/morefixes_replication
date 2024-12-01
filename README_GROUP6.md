@@ -8,7 +8,7 @@
 }
 
 ## 01 SSS Assignment 2
-- **Aurthors:   Jayme Hebinck, Sha Li ,Houhua Ma,Samaneh Jalilian **
+- **Authors: Jayme Hebinck, Sha Li, Houhua Ma, Samaneh Jalilian**
 - **Main tasks:**
   1. Configure the environment
   2. Dump data
@@ -21,7 +21,17 @@
     - Distribution of CVEs and fixed CVEs yearly: **morefixes_yearlycve.py**
     - Distribution of CWE types : **morefixes_cwe_distribution.py**
     -  Top repositories with most CVEs: **morefixes_top_repositories.py**
-    - Distribution of fixes in different programming lan-
-      guages:**morefixes_language.py**
+    - Distribution of fixes in different programming languages:**morefixes_language.py**
   - **Results Path:  ./results_repo**
+- **CWE Prediction System**
+  - **Path: ./Code**
+    - Script: **cwe_predictor.py**
+    - Important flags:
+      - **HYPERPARAMATERTUNING_FLAG**: Enable this when you want to perform the hyperparameter tuning experiments
+        - Warning: Even on a GPU, this can take up to 12 hours (GPU: RTX 4080 SUPER). 
+        - False by default
+      - **UPDATEDATABASE_FLAG**: Enable this when you want to update the database with the predicted CWE(s)
+        - True by default
+- **Requirements.txt**
+  - Requirements.txt has been slightly adapted to ensure the requirements for the added code are installed
 
