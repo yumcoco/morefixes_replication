@@ -41,7 +41,7 @@
     - Configure the flags to your preference in the **cwe_predictor.py** script
     - Run the CWE Prediction system using **python3 Code/cwe_predictor.py**
 - **Required packages**
-  - **requirements.txt** has been slightly adapted to ensure the requirements for MoreFixes are installed
+  - **requirements.txt** still contains the original MoreFixes requirements, and has not been adapted
   - **requirementsCWEPredictor.txt** is added to ensure all requirements for the CWE Prediction System are installed
     - _Warning: if you do not have a GPU with CUDA support available on your system, or your system does not use a Linux distribution such as Ubuntu, please install another version of PyTorch via https://pytorch.org/._
 
