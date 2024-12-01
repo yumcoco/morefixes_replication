@@ -3,8 +3,6 @@
 # 
 # This Python script aims to predict CWEs for CVEs with missing CWE information. 
 # The addition of these predictions is to make the references of the database more complete.
-# 
-# Please go the https://pytorch.org/ website to install the PyTorch package for your system.
 
 import pandas as pd
 import numpy as np
